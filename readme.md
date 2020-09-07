@@ -75,6 +75,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown_schets_Tekengebied1.png)
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown_schets-02.png)
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown_schets-03.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake_opdracht_7sep_01.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake_opdracht_7sep_02.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake_opdracht_7sep_03.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake_opdracht_7sep_04.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake_opdracht_7sep_05.png)
