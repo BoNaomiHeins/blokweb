@@ -38,15 +38,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Ik vondt het heel leuk om aan me website te werken, vooral in het begin. Ik heb hierdoor ook veel tijd in gestoken. Maar ik heb heel veel moeite gehad met alle verschillende sections/ articles. Toen ik de eerste article buiten de main wilde maken, kreeg ik het niet voormekaar om deze article aan te spreken met css, daarom heb ik ervoor kozen om alle sections en articles in de main te zetten zodat ik de home pagina wel kon maken.Ook heb ik al geprobeerd om in de header interacties werkend te maken. Als je op de zoek knop drukt wordt de zoekbalk zichtbaar, als je over de linkjes gaat in de header worden ze rood en bold en als je over de winkelwagen gaat met je muis wordt je winkelwagen zichtbaar. Ik heb dus ook verschillende eventlisteners geprobeerd te gebruiken. Ook is de webshop een beetje responsive voor de verschillende telefoonschermen.-
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) van hoe ver ik ben](images/voortgang1-1.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-2.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-3.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-4.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-5.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-6.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-7.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-8.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-9.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-10.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang1-11.png)
+
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-1. Hoe we kunnen zorgen dat website zo responive mogelijk worden?
+2.Moeten we het hamburger menu laten werken?
+3. Hoe kan je met 2 html pagina's en 1 css ervoor zorgen dat de nth-of-type(n) goed werkt, want als je bijvoorbeeld de eerste p op de ene html bold wilt maken, maar de eerste p op de andere html niet bold moet worden.-
 
 ### Verslag van meeting
 
