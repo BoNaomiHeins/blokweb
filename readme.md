@@ -59,11 +59,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -1. Hoe we kunnen zorgen dat website zo responive mogelijk worden?
 2.Moeten we het hamburger menu laten werken?
-3. Hoe kan je met 2 html pagina's en 1 css ervoor zorgen dat de nth-of-type(n) goed werkt, want als je bijvoorbeeld de eerste p op de ene html bold wilt maken, maar de eerste p op de andere html niet bold moet worden.-
+3. Hoe kan je met 2 html pagina's en 1 css ervoor zorgen dat de nth-of-type(n) goed werkt, want als je bijvoorbeeld de eerste p op de ene html bold wilt maken, maar de eerste p op de andere html niet bold moet worden.
+4.Hoe kan je een caroussel maken?-
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+transform: translateX();
+performt veel beter op de mobiel dan clac()
+
+Verschil tussen een button en een anchor:
+-anchor linkt naar een andere pagina
+-button is een actie op de pagina (bijvoorbeeld menu iconon voor het hamburger menu)
+
+Hamburger menu hoef je niet werkent te maken. Maar als je het wel gaat doen moet je eerst kritisch kijken of het ook echt handig is.
+De hamburger menu kan je maken door de class aan of uit te zetten, de nav element een achtergrondskleur te geven, geeft het een position absolute en positioneer het buiten het scherm bvb door transform: translateX(100%). Class 'menuactive' op de body zetten en dan in de css 'body.menuactive nav' met left: 0; en op de nav een transition.
+
+gebruik geen sections maar divs als het gaat om het style van de elementen.
+
+interface afbeeldingen (voor de sier of sfeer):
+in de css background-img: url();
+content afbeeldingen (zijn bijvoorveeld afbeeldingen van het product die je verkoopt):
+in de html was img tag.
+
+voor een carrousel kan je overflow-x: scroll gebruiken.
+
+om nth-of-type goed te laten verlopen met 2 html pages kan je de body een class of id geven.
 
 
 
