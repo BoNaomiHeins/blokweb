@@ -1,8 +1,8 @@
 // JavaScript Document
 var winkelwagen = document.querySelector("header div:nth-of-type(2) ul li:nth-of-type(2)");
 var element = document.querySelector("header p");
-var zoeken = document.querySelector("header div:nth-of-type(2) ul li:first-of-type");
-var zoekbalk = document.querySelector("form input");
+var zoeken = document.querySelector("header div:nth-of-type(2) ul li button:first-of-type");
+var zoekbalk = document.querySelector("header div:nth-of-type(2) ul li form input");
 var imgElement = document.querySelector(".afbeeldingveranderen");
 
 winkelwagen.addEventListener("mouseover", function(){
