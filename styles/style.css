@@ -12,6 +12,8 @@ body{
     width: 100vw;
     font-family: 'Titillium Web', sans-serif;
     width: 100vw;
+    font-size: 1em;
+
 }
 
 header{
@@ -24,7 +26,7 @@ main{
 }
 
 footer{
-    background-color: black;
+    background-color: #191919;
     width: 100vw;
     padding: 2em 0 3em 0;
     position: relative;
@@ -39,9 +41,14 @@ section{
 
 }
 
+h1{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 h2{
     color: #000;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
@@ -52,7 +59,7 @@ h2{
 h3{
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1em;
     color: #22212c;
     text-align: center;
 }
@@ -62,11 +69,11 @@ h4{
     text-align: center;
     color: #73737a;
     font-weight: 600;
-    font-size: 14px;
+    font-size: .875em;
 }
 
 h5{
-    font-size: 18px;
+    font-size: 1.125em;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -75,7 +82,7 @@ h5{
 
 p{
     color: #000;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 26px;
     text-align: center;
     width: 90%;
@@ -99,7 +106,7 @@ input{
     height: 2.8em;
     background-color: #292733;
     color: white;
-    font-size: 14px;
+    font-size: .875em;
     padding-left: 1em;
     z-index: -1;
     transition: 1s;
@@ -204,7 +211,7 @@ header p{
     position: absolute;
     font-size: 12px;
     right: 20px;
-    top: 12em;
+    top: 10em;
     z-index: -1;
     transition: 1s;
 }
@@ -228,6 +235,7 @@ input.zichtbaar{
 
 
 
+/*homepage*/
 
 /*main*/
 
@@ -313,7 +321,6 @@ main article:nth-of-type(2) a{
     cursor: pointer;
     font-size: 0.9em;
     line-height: 11px;
-    font-family: "Titillium Web";
     border-width: 2px;
     padding: 1em;
     text-align: center;
@@ -407,7 +414,6 @@ article#maatwerk a:hover{
 article#maatwerk h2{
     width: 90%;
     color: white;
-    font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-shadow: 3px 3px 3px #292733;
@@ -453,6 +459,7 @@ section#nieuweArmaturen{
 section#nieuweArmaturen a{
     width: 40%;
     height: 50%;
+    padding-top: 1em;
 }
 
 section#nieuweArmaturen a img{
@@ -466,11 +473,12 @@ section#nieuweArmaturen a p{
     font-weight: 600;
     line-height: 1.3em;
 }
+
 section#nieuweArmaturen a p:last-of-type{
     color: #717171;
 }
 
-h3:nth-of-type(2){
+h3:last-of-type{
     margin: 2em 0 0;
 }
 
@@ -478,6 +486,223 @@ h3:nth-of-type(2){
 
 
 
+
+
+
+
+/*webshop*/
+
+div.woonkamer-img{
+    width: 100vw;
+    height: 12vh;
+    background-image: url(../images/woonkamer.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 3.1em;
+    z-index: -2;
+}
+
+p.broodkruimelnavigatie{
+    display: block;
+    position: absolute;
+    margin: 5em 0 0 1em;
+    font-size: .8em;
+    text-align: left;
+    color: #73737a;
+}
+p.broodkruimelnavigatie a{
+    transition: 1s;
+}
+
+p.broodkruimelnavigatie a:last-of-type{
+    font-size: 1.1em;
+    color: black;
+}
+
+p.broodkruimelnavigatie a:hover{
+    font-size: 1.1em;
+    color: #E30015;
+    font-weight: bold;
+}
+
+body#webshop h1{
+    letter-spacing: -.04em;
+    position: relative;
+    margin: 3.2em 0 0 0.4em;
+}
+
+body#webshop section.webshopnav{
+    background-color: #f0f0f0;
+    font-size: .8em;
+    margin: .5em 1em;
+    text-align: left;
+}
+
+body#webshop section.webshopnav p{
+    text-align: left;
+    margin: inherit;
+/*    margin-top: .5em;*/
+    width: auto;
+    padding: .5em .7em;
+    font-size: 1.1em;
+    color: #b3b3b3;
+    line-height: 1.4;
+}
+
+body#webshop section.webshopnav div.groepeer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding: .5em;
+}
+body#webshop section.webshopnav div.groepeer-bekijk{
+    display: flex;
+/*    padding: .5em 1em;*/
+}
+
+body#webshop section.webshopnav div.groepeer-bekijk p{
+    margin-top: .5em;
+    color: #7b7b7b;
+}
+body#webshop section.webshopnav div:first-of-type button{
+    background-color: transparent;
+    padding: .5em .7em;
+    color: #7b7b7b;
+}
+
+body#webshop section.webshopnav div.groepeer-bekijk button.bekijk img{
+    width: 20px;
+}
+
+body#webshop section.webshopnav div:first-of-type div.groepeer-bekijk button.bekijk:first-of-type{
+    background-color: #E30015;
+}
+
+body#webshop section.webshopnav div:last-of-type{
+    display: flex;
+    justify-content: flex-end;
+}
+
+body#webshop section.webshopnav div:last-of-type button{
+    margin: .5em;
+    padding: .5em .7em;
+    background-color: transparent;
+    color: #7b7b7b;
+}
+
+body#webshop section.webshopnav div:last-of-type button:hover{
+    background-color: #E30015;
+    color: white;
+}
+
+body#webshop section.webshopnav div:last-of-type button:nth-of-type(1){
+    background-color: #E30015;
+    color: white;
+}
+
+body#webshop section:nth-of-type(4), body#webshop section:nth-of-type(5), body#webshop form.nieuwsbrief, body#webshop section:nth-of-type(6){
+    background-color: #f0f0f0;
+    font-size: .8em;
+    margin: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+body#webshop section:nth-of-type(4) h3, body#webshop section:nth-of-type(5) h3, body#webshop form.nieuwsbrief h3, body#webshop section:nth-of-type(6) h3{
+    text-align: left;
+    margin: 1em 0;
+}
+
+body#webshop section:nth-of-type(4) ul li, body#webshop section:nth-of-type(5) ul li{
+    list-style: disc inside none;
+    margin: .2em 0;
+}
+
+body#webshop section:nth-of-type(4) ul li a, body#webshop section:nth-of-type(5) ul li a{
+    color: #73737a;
+}
+
+body#webshop section:nth-of-type(4) ul li a.binnenverlichting-geselecteerd{
+    background-color: #7b7b7b;
+    color: #fff;
+    padding: .2em .4em;
+}
+
+body#webshop section:nth-of-type(4) ul li ul li{
+    padding-left: 1.5em;
+/*    list-style-image: url(../images/list-img.png);*/
+}
+
+body#webshop section:nth-of-type(5) ul li{
+    list-style-type: none;
+}
+
+body#webshop form.nieuwsbrief input{
+    position: relative;
+    display: block;
+    left: 0;
+    width: 32em;
+    margin: .5em 0;
+    background-color: #fff;
+    border: solid .5px #7b7b7b;
+    z-index: 1;
+}
+
+body#webshop form.nieuwsbrief label{
+    color: #73737a;
+}
+
+body#webshop form.nieuwsbrief button{
+    display: block;
+    margin: 1em 0 0 0;
+    width: auto;
+    background-color: #e30015;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 11px;
+    border-width: 2px;
+    padding: .8em 1em;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body#webshop section:nth-of-type(6) p, body#webshop section:nth-of-type(6) a{
+    color: #73737a;
+    text-align: left;
+    margin: 0;
+}
+
+body#webshop section:nth-of-type(6) p:nth-of-type(2), body#webshop section:nth-of-type(6) p:last-of-type{
+    margin: .5em 0;
+}
+
+body#webshop section:nth-of-type(6) hr{
+    background-color: #73737a;
+    margin: 1em 0;
+}
+
+body#webshop section:nth-of-type(6) a:last-of-type{
+    display: block;
+    margin: 1em 0 0 0;
+    width: 11em;
+    background-color: #e30015;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 11px;
+    border-width: 2px;
+    padding: .8em 1em;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 /*footer*/
 
