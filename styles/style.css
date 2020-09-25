@@ -344,41 +344,53 @@ main article:nth-of-type(2) a{
 
 
 
-
-section.projecten{
-/*    display: block;*/
+body#homepage > section:first-of-type,
+body#homepage > section:nth-of-type(2),
+body#homepage > section:nth-of-type(3){
+    display: block;
     position: relative;
     overflow: hidden;
     margin: 1em 5vw;
     width: 90vw;
-    height: 50vh;
+    height: 25em;
+    padding-bottom: 4em;
 }
 
-section.projecten img{
+body#homepage > section:first-of-type img,
+body#homepage > section:nth-of-type(2) img,
+body#homepage > section:nth-of-type(3) img{
     height: 100%;
     width: 100%;
+    max-width: 30em;
     object-fit: cover;
 }
 
-section.projecten button{
+body#homepage > section:first-of-type button,
+body#homepage > section:nth-of-type(2) button,
+body#homepage > section:nth-of-type(3) button{
     position: absolute;
+    left: 0;
     z-index: 10;
-    width: 2em;
-    height: 2em;
-    top: 50%;
+    width: 3em;
+    height: 2.5em;
+    top: 12.5em;
     transform: translateY(-50%);
-    padding: 3% 5%;
+    padding: 0 .5em;
     background-color: rgba(74, 74, 74, .8);
     box-shadow: 3px 3px 5px #292733;
 }
 
-section.projecten button img{
-/*    position: absolute;*/
-    width: 100%;
-}
-
-section.projecten button:nth-of-type(2) img{
+body#homepage > section:first-of-type button:nth-of-type(2),
+body#homepage > section:nth-of-type(2) button:nth-of-type(2),
+body#homepage > section:nth-of-type(3) button:nth-of-type(2){
     right: 0;
+    left: auto;
+}
+
+body#homepage > section:first-of-type button img,
+body#homepage > section:nth-of-type(2) button img,
+body#homepage > section:nth-of-type(3) button img{
+    padding: .5em;
 }
 
 
@@ -386,7 +398,9 @@ section.projecten button:nth-of-type(2) img{
 
 
 
-article#maatwerk{
+
+
+body#homepage > article{
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -408,40 +422,40 @@ article.hotKroon{
 
 }
 
-article#maatwerk h2{
+body#homepage > article h2{
     width: 90%;
     color: white;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     text-shadow: 3px 3px 3px #292733;
     text-transform: uppercase;
     text-align: center;
-    margin: 3em 0 1em 0;
+    margin: 3em 0 .5em 0;
     height: 1em;
 }
 
-article#maatwerk p:first-of-type{
+body#homepage > article p:first-of-type{
     width: 90%;
     color: white;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 0 15em 0;
+    margin: 0 0 13em 0;
 }
 
-article#maatwerk p:last-of-type{
+body#homepage > article p:last-of-type{
     width: 90%;
     color: white;
     text-shadow: 2px 2px 2px #292733;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75em;
     text-align: center;
     margin: 0 0 .7em 0;
     line-height: 1.5em;
 }
 
-article#maatwerk a{
+body#homepage > article a{
     display: block;
     margin: 1em auto 2em auto;
     width: 30%;
@@ -459,7 +473,7 @@ article#maatwerk a{
     z-index: 5;
 }
 
-article#maatwerk a:hover{
+body#homepage > article a:hover{
     background-color: #e30015;
     color: white;
 }
@@ -467,41 +481,47 @@ article#maatwerk a:hover{
 
 
 
-section#nieuweArmaturen{
+body#homepage > section:nth-of-type(4) div,
+body#webshop main section{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100vw;
-    margin: 2em 0;
+    margin: 0 0 1em;
 }
 
-section#nieuweArmaturen h4{
-    display: none;
-}
-
-section#nieuweArmaturen a{
+body#homepage > section:nth-of-type(4) a,
+body#webshop main section a{
     width: 40%;
-    height: 50%;
-    padding-top: 1em;
+    height: 100%;
+    padding-bottom: 1em;
+    margin: 1em 0;
+    position: relative;
 }
 
-section#nieuweArmaturen a img{
+body#homepage > section:nth-of-type(4) a img,
+body#webshop main section a img{
     width: 100%;
 }
 
-section#nieuweArmaturen a p{
+body#homepage > section:nth-of-type(4) a p,
+body#webshop main section a p{
     color: #22212c;
     text-align: left;
-    font-size: 15px;
+    font-size: .9em;
     font-weight: 600;
     line-height: 1.3em;
 }
 
-section#nieuweArmaturen a p:last-of-type{
+body#homepage > section:nth-of-type(4) a p:last-of-type,
+body#webshop main section a p:last-of-type{
     color: #717171;
+    margin-top: .5em;
 }
 
-
+body#webshop main section h4{
+    display: none;
+}
 
 
 
@@ -522,23 +542,24 @@ div.woonkamer-img{
     z-index: -2;
 }
 
-p.broodkruimelnavigatie{
+body#webshop > p{
     display: block;
     margin: .5em 0 0 1em;
     font-size: .8em;
     text-align: left;
     color: #73737a;
 }
-p.broodkruimelnavigatie a{
+body#webshop > p a{
     transition: 1s;
+    color: #73737a;
 }
 
-p.broodkruimelnavigatie a:last-of-type{
+body#webshop p a:last-of-type{
     font-size: 1.1em;
     color: black;
 }
 
-p.broodkruimelnavigatie a:hover{
+body#webshop p a:hover{
     font-size: 1.1em;
     color: #E30015;
     font-weight: bold;
@@ -549,17 +570,20 @@ body#webshop h1{
     margin: .5em 0 .5em 0.4em;
 }
 
-body#webshop section.webshopnav{
+body#webshop > section:first-of-type,
+body#webshop > section:nth-of-type(2){
     background-color: #f0f0f0;
     font-size: .8em;
     margin: .5em 1em;
     text-align: left;
 }
-body#webshop section.webshopnav h4{
+body#webshop > section:first-of-type h4,
+body#webshop > section:nth-of-type(2) h4{
     display: none;
 }
 
-body#webshop section.webshopnav p{
+body#webshop > section:first-of-type p,
+body#webshop > section:nth-of-type(2) p{
     text-align: left;
     margin: inherit;
     width: auto;
@@ -569,7 +593,8 @@ body#webshop section.webshopnav p{
     line-height: 1.4;
 }
 
-body#webshop section.webshopnav div.groepeer{
+body#webshop > section:first-of-type > div:first-of-type,
+body#webshop > section:nth-of-type(2) > div:first-of-type{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -577,47 +602,56 @@ body#webshop section.webshopnav div.groepeer{
     justify-content: flex-start;
     padding: .5em;
 }
-body#webshop section.webshopnav div.groepeer-bekijk{
+body#webshop > section:first-of-type > div:first-of-type div,
+body#webshop > section:nth-of-type(2) > div:first-of-type div{
     display: flex;
 /*    padding: .5em 1em;*/
 }
 
-body#webshop section.webshopnav div.groepeer-bekijk p{
-    margin-top: .5em;
+body#webshop > section:first-of-type > div:first-of-type div p,
+body#webshop > section:nth-of-type(2) > div:first-of-type div p{
     color: #7b7b7b;
 }
-body#webshop section.webshopnav div:first-of-type button{
+
+body#webshop > section:first-of-type button,
+body#webshop > section:nth-of-type(2) button{
     background-color: transparent;
     padding: .5em .7em;
     color: #7b7b7b;
 }
 
-body#webshop section.webshopnav div.groepeer-bekijk button.bekijk img{
-    width: 20px;
-}
-
-body#webshop section.webshopnav div:first-of-type div.groepeer-bekijk button.bekijk:first-of-type{
+body#webshop > section:first-of-type div:first-of-type div button:first-of-type,
+body#webshop > section:nth-of-type(2) div:first-of-type div button:first-of-type{
     background-color: #E30015;
 }
 
-body#webshop section.webshopnav div:last-of-type{
+body#webshop > section:first-of-type div:first-of-type div button img,
+body#webshop > section:nth-of-type(2) div:first-of-type div button img{
+    width: 20px;
+}
+
+body#webshop > section:first-of-type div:last-of-type,
+body#webshop > section:nth-of-type(2) div:last-of-type{
     display: flex;
     justify-content: flex-end;
 }
 
-body#webshop section.webshopnav div:last-of-type button{
+body#webshop > section:first-of-type > div:last-of-type button,
+body#webshop > section:nth-of-type(2) > div:last-of-type button{
     margin: .5em;
     padding: .5em .7em;
     background-color: transparent;
     color: #7b7b7b;
 }
 
-body#webshop section.webshopnav div:last-of-type button:hover{
+body#webshop > section:first-of-type > div:last-of-type button:hover,
+body#webshop > section:nth-of-type(2) > div:last-of-type button:hover{
     background-color: #E30015;
     color: white;
 }
 
-body#webshop section.webshopnav div:last-of-type button:nth-of-type(1){
+body#webshop > section:first-of-type > div:last-of-type button:first-of-type,
+body#webshop > section:nth-of-type(2) > div:last-of-type button:first-of-type{
     background-color: #E30015;
     color: white;
 }
@@ -628,7 +662,10 @@ body#webshop section.webshopnav div:last-of-type button:nth-of-type(1){
 
 
 
-body#webshop form.nieuwsbrief, body#webshop section.filter-sorteer{
+body#webshop > form,
+body#webshop > section:nth-of-type(3),
+body#webshop > section:nth-of-type(4),
+body#webshop > section:nth-of-type(5){
     background-color: #f0f0f0;
     font-size: .8em;
     margin: 1em;
@@ -636,36 +673,41 @@ body#webshop form.nieuwsbrief, body#webshop section.filter-sorteer{
     padding: 1em;
 }
 
-body#webshop form.nieuwsbrief h3, body#webshop section.filter-sorteer h3{
+body#webshop > form h3,
+body#webshop > section:nth-of-type(3) h3,
+body#webshop > section:nth-of-type(4) h3,
+body#webshop > section:nth-of-type(5) h3{
     text-align: left;
     margin: 1em 0;
 }
 
-body#webshop section.filter-sorteer ul li{
+body#webshop > section:nth-of-type(3) ul li{
     list-style: disc inside none;
     margin: .2em 0;
 }
 
-body#webshop section.filter-sorteer ul li a{
+body#webshop > section:nth-of-type(4) ul li{
+    list-style-type: none;
+}
+
+body#webshop > section:nth-of-type(3) ul li a,
+body#webshop > section:nth-of-type(4) ul li a{
     color: #73737a;
 }
 
-body#webshop section:nth-of-type(4) ul li a.binnenverlichting-geselecteerd{
+body#webshop > section:nth-of-type(3) ul li a.binnenverlichting-geselecteerd{
     background-color: #7b7b7b;
     color: #fff;
     padding: .2em .4em;
 }
 
-body#webshop section:nth-of-type(4) ul li ul li{
+body#webshop section:nth-of-type(3) ul li ul li{
     padding-left: 1.5em;
-/*    list-style-image: url(../images/list-img.png);*/
 }
 
-body#webshop section:nth-of-type(5) ul li{
-    list-style-type: none;
-}
 
-body#webshop form.nieuwsbrief input{
+
+body#webshop > form input{
     position: relative;
     display: block;
     left: 0;
@@ -676,11 +718,11 @@ body#webshop form.nieuwsbrief input{
     z-index: 1;
 }
 
-body#webshop form.nieuwsbrief label{
+body#webshop > form label{
     color: #73737a;
 }
 
-body#webshop form.nieuwsbrief button{
+body#webshop > form button{
     display: block;
     margin: 1em 0 0 0;
     width: auto;
@@ -697,22 +739,24 @@ body#webshop form.nieuwsbrief button{
     text-transform: uppercase;
 }
 
-body#webshop section:nth-of-type(6) p, body#webshop section:nth-of-type(6) a{
+body#webshop > section:nth-of-type(5) p,
+body#webshop > section:nth-of-type(5) a{
     color: #73737a;
     text-align: left;
     margin: 0;
 }
 
-body#webshop section:nth-of-type(6) p:nth-of-type(2), body#webshop section:nth-of-type(6) p:last-of-type{
+body#webshop > section:nth-of-type(5) p:nth-of-type(2),
+body#webshop > section:nth-of-type(5) p:last-of-type{
     margin: .5em 0;
 }
 
-body#webshop section:nth-of-type(6) hr{
+body#webshop section:nth-of-type(5) hr{
     background-color: #73737a;
     margin: 1em 0;
 }
 
-body#webshop section:nth-of-type(6) a:last-of-type{
+body#webshop section:nth-of-type(5) a:last-of-type{
     display: block;
     margin: 1em 0 0 0;
     width: 11em;
@@ -729,9 +773,19 @@ body#webshop section:nth-of-type(6) a:last-of-type{
     text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
 /*footer*/
 
-footer p, footer section ul li a, footer section:nth-of-type(4) ul li a, footer section:nth-of-type(5) ul li a{
+footer p, footer section ul li a,
+footer section:nth-of-type(4) ul li a,
+footer section:nth-of-type(5) ul li a{
     color: #666666;
     text-align: left;
     line-height: 22px;
@@ -745,7 +799,8 @@ footer section:first-of-type p:first-of-type{
     font-size: 15px;
     text-transform: uppercase;
 }
-footer section:first-of-type p:nth-of-type(3), footer section:first-of-type p:nth-of-type(6){
+footer section:first-of-type p:nth-of-type(3),
+footer section:first-of-type p:nth-of-type(6){
     margin-bottom: 1em;
 }
 
@@ -757,7 +812,8 @@ footer p:nth-of-type(9){
 }
 */
 
-footer section:first-of-type p img, footer section:nth-of-type(5) p img{
+footer section:first-of-type p img,
+footer section:nth-of-type(5) p img{
     height: .9em;
     margin:  0 .5em 0 0;
 }
