@@ -500,19 +500,18 @@ body#homepage > section:nth-of-type(2) div{
     width: 200vw;
 }
 
-body#homepage > section:nth-of-type(2) div,
-body#webshop main section{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 0 1em;
+body#homepage > section:nth-of-type(2) div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 0 1em;
 }
 
 body#homepage > section:nth-of-type(2) article,
 body#webshop main section article {
     width: 45vw;
     max-width: 12em;
-    height: 100%;
+/*    height: 100%;*/
     padding-bottom: 1em;
     margin: 1em 0;
     position: relative;
@@ -594,7 +593,17 @@ body#webshop main h1{
 
 
 
+body#webshop main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+body#webshop main section:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 1em;
+    justify-items: center;
+}
 
 body#webshop main > section:first-of-type,
 body#webshop main > section:nth-of-type(3){
@@ -603,15 +612,9 @@ body#webshop main > section:nth-of-type(3){
     margin: .5em 1em;
     text-align: left;
     width: auto;
-    margin: 0 1em;
+    margin: 0 1em 1em;
 }
 
-/*
-body#webshop main > section:first-of-type h4,
-body#webshop main > section:nth-of-type(3) h4{
-    margin: -10000em;
-}
-*/
 
 body#webshop main > section:first-of-type p,
 body#webshop main > section:nth-of-type(3) p{
@@ -681,10 +684,10 @@ body#webshop main > section:nth-of-type(3) div button:nth-of-type(2){
 
 
 
-body#webshop > form,
-body#webshop > section:nth-of-type(1),
-body#webshop > section:nth-of-type(2),
-body#webshop > section:nth-of-type(3){
+body#webshop main > form,
+body#webshop main > section:nth-of-type(4),
+body#webshop main > section:nth-of-type(5),
+body#webshop main > section:nth-of-type(6){
     background-color: #f0f0f0;
     font-size: .8em;
     margin: 1em;
@@ -692,43 +695,43 @@ body#webshop > section:nth-of-type(3){
     padding: 1em;
 }
 
-body#webshop > form h3,
-body#webshop > section:nth-of-type(1) h3,
-body#webshop > section:nth-of-type(2) h3,
-body#webshop > section:nth-of-type(3) h3{
+body#webshop main > form h3,
+body#webshop main > section:nth-of-type(4) h3,
+body#webshop main > section:nth-of-type(5) h3,
+body#webshop main > section:nth-of-type(6) h3{
     text-align: left;
     margin: 1em 0;
 }
 
-body#webshop > section:nth-of-type(1) ul li{
+body#webshop main > section:nth-of-type(4) ul li{
     list-style: disc inside none;
     margin: .2em 0;
 }
 
-body#webshop > section:nth-of-type(2) ul li{
+body#webshop main > section:nth-of-type(5) ul li{
     list-style-type: none;
 }
 
-body#webshop > section:nth-of-type(1) ul li a,
-body#webshop > section:nth-of-type(2) ul li a{
+body#webshop main > section:nth-of-type(4) ul li a,
+body#webshop main > section:nth-of-type(5) ul li a{
     color: #73737a;
 }
 
-body#webshop > section:nth-of-type(1) ul li a.binnenverlichting-geselecteerd{
+body#webshop main > section:nth-of-type(4) ul li a.binnenverlichting-geselecteerd{
     background-color: #7b7b7b;
     color: #fff;
     padding: .2em .4em;
 }
 
-body#webshop section:nth-of-type(1) ul li ul li{
+body#webshop main > section:nth-of-type(4) ul li ul li{
     padding-left: 1.5em;
 }
 
-body#webshop > form label{
+body#webshop main > form label{
     color: #73737a;
 }
 
-body#webshop > form input{
+body#webshop main > form input{
     position: relative;
     display: block;
     left: 0;
@@ -737,9 +740,10 @@ body#webshop > form input{
     background-color: #fff;
     border: solid .5px #7b7b7b;
     z-index: 1;
+    padding: .5em;
 }
 
-body#webshop > form button{
+body#webshop main > form button{
     display: block;
     margin: 1em 0 0 0;
     width: auto;
@@ -756,24 +760,24 @@ body#webshop > form button{
     text-transform: uppercase;
 }
 
-body#webshop > section:nth-of-type(3) p,
-body#webshop > section:nth-of-type(3) a{
+body#webshop main > section:nth-of-type(6) p,
+body#webshop main > section:nth-of-type(6) a{
     color: #73737a;
     text-align: left;
     margin: 0;
 }
 
-body#webshop > section:nth-of-type(3) p:nth-of-type(2),
-body#webshop > section:nth-of-type(3) p:last-of-type{
+body#webshop main > section:nth-of-type(6) p:nth-of-type(2),
+body#webshop main > section:nth-of-type(6) p:last-of-type{
     margin: .5em 0;
 }
 
-body#webshop section:nth-of-type(3) hr{
+body#webshop main > section:nth-of-type(6) hr{
     background-color: #73737a;
     margin: 1em 0;
 }
 
-body#webshop > section:nth-of-type(3) a:last-of-type{
+body#webshop main > section:nth-of-type(6) a:last-of-type{
     display: block;
     margin: 1em 0 0 0;
     width: 11em;
@@ -880,12 +884,8 @@ footer section:first-of-type section h6{
     header p.anders{
     top: 10em;
     }
-/*
-    body{
-        background-color: pink;
-    }
-*/
 }
+
 
 @media (min-width: 43em) {
     p{
@@ -918,6 +918,37 @@ footer section:first-of-type section h6{
         margin: 0 10vw;
     }
 
+    body#homepage > section:nth-of-type(2) div{
+        width: 130vw;
+    }
+
+    body#homepage > section:nth-of-type(2) article {
+        width: 45vw;
+        max-width: 12em;
+    }
+
+    body#webshop main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: .5em
+    }
+    body#webshop main > h1{
+        grid-area: 1 / 1 / 2 /-1;
+        order: -1;
+    }
+    body#webshop main > section:first-of-type{
+        grid-area: 2 / 1 / 2 /-1;
+        order: 0;
+    }
+    body#webshop main > section:nth-of-type(2){
+        order: 1;
+        grid-area: 3 / 2 / 8 /-1
+    }
+    body#webshop main > section:nth-of-type(3){
+        grid-column: 1/-1;
+        order: 2;
+    }
+
     footer{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -925,14 +956,23 @@ footer section:first-of-type section h6{
     footer >section:nth-of-type(5){
         grid-column: 2/-1;
     }
-/*
-    body{
-        background-color: palevioletred;
-    }
-*/
+
 }
 
+
 @media(min-width: 60em) {
+    body#homepage > section:nth-of-type(2){
+        width: 100vw;
+    }
+    body#homepage > section:nth-of-type(2) div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-gap: 1em;
+        padding-left: 1em;
+        width: 100%;
+        margin: 0;
+    }
+
     footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -940,6 +980,14 @@ footer section:first-of-type section h6{
     footer >section:nth-of-type(5){
         grid-column: 1/-1;
     }
+
+    body#webshop main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    body#webshop main section:nth-of-type(2){
+    grid-template-columns: 1fr 1fr 1fr;
+
+
 }
 
 @media (min-width: 82em){
@@ -955,6 +1003,7 @@ footer section:first-of-type section h6{
     footer >section:nth-of-type(5){
         grid-column: 5/-1;
     }
+*/
 
 }
 
