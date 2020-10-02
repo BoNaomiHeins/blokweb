@@ -30,7 +30,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Ik vond het best lastig worden, omdat ik best vaak mijn html of css moest aanpassen. Doordat ik bijvoorbeeld te veel sections had gebruikt, maar als je één ding aanpast in je html en alles wordt aangesproken met nth-of-typ(n), moet je alles aanpassen omdat het anders niet meer werkt. En dit was steeds best frusterend, maar uiteindelijk is het me toch gelukt om 2 pagina's responsive te maken.
+
+**Screenshot(s):**v
+
+![screenshot(s) van hoe ver ik ben](images/voortgang2-1.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-2.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-3.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-4.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-5.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-6.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-7.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-8.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-9.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-10.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang2-11.png)
+
+### Agenda voor meeting
+
+1. Hoe kan je een heading op een vaste plek zetten in de carroussel
+2. CSS animatie
+3. Automatische slider
+
+### Verslag van meeting
 
 
 
@@ -38,7 +60,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--Ik vondt het heel leuk om aan me website te werken, vooral in het begin. Ik heb hierdoor ook veel tijd in gestoken. Maar ik heb heel veel moeite gehad met alle verschillende sections/ articles. Toen ik de eerste article buiten de main wilde maken, kreeg ik het niet voormekaar om deze article aan te spreken met css, daarom heb ik ervoor kozen om alle sections en articles in de main te zetten zodat ik de home pagina wel kon maken.Ook heb ik al geprobeerd om in de header interacties werkend te maken. Als je op de zoek knop drukt wordt de zoekbalk zichtbaar, als je over de linkjes gaat in de header worden ze rood en bold en als je over de winkelwagen gaat met je muis wordt je winkelwagen zichtbaar. Ik heb dus ook verschillende eventlisteners geprobeerd te gebruiken. Ook is de webshop een beetje responsive voor de verschillende telefoonschermen.-
+Ik vondt het heel leuk om aan me website te werken, vooral in het begin. Ik heb hierdoor ook veel tijd in gestoken. Maar ik heb heel veel moeite gehad met alle verschillende sections/ articles. Toen ik de eerste article buiten de main wilde maken, kreeg ik het niet voormekaar om deze article aan te spreken met css, daarom heb ik ervoor kozen om alle sections en articles in de main te zetten zodat ik de home pagina wel kon maken.Ook heb ik al geprobeerd om in de header interacties werkend te maken. Als je op de zoek knop drukt wordt de zoekbalk zichtbaar, als je over de linkjes gaat in de header worden ze rood en bold en als je over de winkelwagen gaat met je muis wordt je winkelwagen zichtbaar. Ik heb dus ook verschillende eventlisteners geprobeerd te gebruiken. Ook is de webshop een beetje responsive voor de verschillende telefoonschermen.
 
 **Screenshot(s):**
 
