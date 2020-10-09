@@ -24,15 +24,27 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+In deze korte periode ben ik bezig geweest met het verbeteren van mijn code en mijn website toegangelijker te maken. Zo heb ik een :hover :actice states toegevoegd. Ook heb ik geprobeerd mij te verdiepen in de screenreaders, hierbij heb ik verschillende youtube filmpjes gekeken hoe je de screenreader moet gebruiken en heb ik de verschillende toetsen voor de commando's voor mezelf op geschreven. Maar toch blijft het heel moeilijk voor mij om de screenreader te begrijpen.
+
+**Screenshot(s):**
+
+### Agenda voor meeting
+1. Hoe moet je een screenreader gebruiken
+2. Hoe kan je de website nog toegangelijker maken
+3. Hoe kan ik mijn heading in een carousel een vaste plek geven.
+4. Hoe gebruik je een :before en :after voor een knop waarbij de achtergrond veranderd van links naar rechts.
+
+### Verslag van meeting
 
 
 
 ## Voortgang 2 (week 5)
 
+### Stand van zaken
 Ik vond het best lastig worden, omdat ik best vaak mijn html of css moest aanpassen. Doordat ik bijvoorbeeld te veel sections had gebruikt, maar als je één ding aanpast in je html en alles wordt aangesproken met nth-of-typ(n), moet je alles aanpassen omdat het anders niet meer werkt. En dit was steeds best frusterend, maar uiteindelijk is het me toch gelukt om 2 pagina's responsive te maken.
 
-**Screenshot(s):**v
+**Screenshot(s):**
 
 ![screenshot(s) van hoe ver ik ben](images/voortgang2-1.png)
 ![screenshot(s) van hoe ver ik ben](images/voortgang2-2.png)
@@ -53,7 +65,9 @@ Ik vond het best lastig worden, omdat ik best vaak mijn html of css moest aanpas
 3. Automatische slider
 
 ### Verslag van meeting
+De header moet uit de section om te zorgen dat hij op een vaste plek kan blijven staan boven de carroussel.
 
+Ik moet mijn website nog gebruiksvriendelijk mmaken voor mensen die alleen gebruik kunnen maken van hun toetstenbord. Ook moet ik alle states uitwerken, zoals :focus en :active. En alle images een alt text geven, zodat screenreaders de afbeeldingen kunnen omschrijven aan de gebruiker.
 
 
 ## Voortgang 1 (week 3)

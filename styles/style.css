@@ -131,6 +131,10 @@ hr{
 
 
 
+
+
+
+
 /*header*/
 
 header div:first-of-type{
@@ -219,16 +223,20 @@ header div:nth-of-type(2) ul li button:hover{
 
 header p{
     position: absolute;
+    display: none;
     font-size: 12px;
     right: 20px;
     top: 0em;
     height: 0;
+/*
     z-index: -1;
     transition: 1s;
-    width: 25em
+*/
+    width: 25em;
 }
 
 header p.anders{
+    display:block;
     top: 12.5em;
     height: auto;
     z-index: 0;
@@ -305,13 +313,26 @@ body#homepage main article:first-of-type a{
     cursor: pointer;
 }
 
+body#homepage main article:first-of-type a:hover{
+    background-color: #e30015;
+}
+body#homepage main article:first-of-type a:active{
+    background-color: #820303;
+}
+
 body#homepage main article:first-of-type a:nth-of-type(2){
     border: solid 1px rgba(255, 255, 255, 0.5);
     background-color: transparent;
     cursor: pointer;
 }
 
+body#homepage main article:first-of-type a:nth-of-type(2):hover{
+    background-color: rgb(227, 0, 21, .7);
+}
 
+body#homepage main article:first-of-type a:nth-of-type(2):active{
+    background-color: rgb(130, 3, 3, .7);
+}
 
 
 
@@ -327,6 +348,7 @@ body#homepage main article:nth-of-type(2) p:first-of-type{
 
 body#homepage main article:nth-of-type(2) a{
     display: block;
+    position: relative;
     margin: 1.5em auto 2em auto;
     width: 9em;
     background-color: #e30015;
@@ -338,9 +360,21 @@ body#homepage main article:nth-of-type(2) a{
     text-align: center;
     font-weight: 600;
     color: white;
-    box-shadow: 3px 3px 5px #292733;
     text-decoration: none;
+    box-shadow: 1px 1px 3px #292733;
+    transition: .2s;
 }
+
+body#homepage main article:nth-of-type(2) a:hover{
+    box-shadow: 3px 3px 5px #292733;
+    background-color: #000;
+}
+
+body#homepage main article:nth-of-type(2) a:active{
+    box-shadow: -2px -2px 5px #292733;
+    background-color: #820303;
+}
+
 
 
 
@@ -388,6 +422,16 @@ body#homepage > section section button{
     padding: 0 .5em;
     background-color: rgba(74, 74, 74, .8);
     box-shadow: 3px 3px 5px #292733;
+}
+
+body#homepage > section section button:hover{
+    background-color: #e30015;
+    opacity: .8;
+}
+
+body#homepage > section section button:active{
+    background-color: #820303;
+    opacity: .8;
 }
 
 body#homepage > section section button:nth-of-type(2){
@@ -475,12 +519,19 @@ body#homepage > article a{
     color: black;
     box-shadow: 3px 3px 5px #292733;
     text-transform: uppercase;
-    z-index: 5;
+    cursor: pointer;
 }
 
 body#homepage > article a:hover{
     background-color: #e30015;
     color: white;
+    box-shadow: 3px 3px 5px #292733;
+}
+
+body#homepage > article a:active{
+    background-color: #820303;
+    color: white;
+    box-shadow: -3px -3px 5px #292733;
 }
 
 /*
@@ -807,13 +858,14 @@ footer li{
     list-style: none;
 }
 
-footer p, footer section ul li a,
+footer p,
+footer section ul li a,
 footer section:nth-of-type(4) ul li a,
 footer section:nth-of-type(5) ul li a{
     color: #666666;
     text-align: left;
     line-height: 22px;
-    font-size: 13px;
+    font-size: .8em;
     margin-left: 1em;
     display: block;
 
@@ -836,22 +888,81 @@ footer section:nth-of-type(5) p img{
 }
 
 footer section:first-of-type section{
+    margin: 0;
+}
+
+footer section:first-of-type section ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: center;
-    margin: 1em 0 0 1em;
+    margin: 1em 0;
+}
+footer section:first-of-type section li{
+    width: 3em;
+    position: relative;
 }
 
-footer section:first-of-type section img{
-    height: 2em;
-    margin-right: .3em;
+footer section:first-of-type section li a img{
+    width: 100%;
+}
+footer section:first-of-type section li a img:hover{
+    box-shadow: 3px 3px 7px #3d0202;
+    width: 80%;
+    position: absolute;
+}
+
+footer section:first-of-type section li a img:active{
+    box-shadow: -3px -3px 7px #3d0202;
+    width: 70%;
+    position: absolute;
 }
 
 footer section:first-of-type section h6{
     position: absolute;
     margin: -100000em;
 }
+
+
+
+
+
+
+
+input:valid{
+
+}
+
+/* unvisited link */
+a:link {
+}
+
+/* visited link */
+a:visited {
+
+}
+
+/* mouse over link */
+ul li a:hover,
+footer section:nth-of-type(4) ul li a:hover{
+    color: #E30015;
+    font-weight: 700;
+}
+
+/* selected link */
+ul li a:active,
+footer section:nth-of-type(4) ul li a:active{
+  color: #820303;
+}
+:focus {
+  outline: 2px solid Orange;
+}
+
+
+
+
+
+
 
 
 
