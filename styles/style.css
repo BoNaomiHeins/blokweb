@@ -125,7 +125,9 @@ hr{
     height: 1px;
 }
 
-
+:focus {
+  outline: 2px solid Orange;
+}
 
 
 
@@ -177,6 +179,8 @@ header div:first-of-type ul li a:hover{
     font-weight: 700;
 }
 
+
+
 header div:nth-of-type(2){
     position: relative;
     background-color: black;
@@ -187,6 +191,10 @@ header div:nth-of-type(2){
     padding-bottom: .5em;
     align-items: center;
     z-index: 2;
+}
+
+header div:nth-of-type(2) nav{
+    display: none;
 }
 
 header div:nth-of-type(2) ul{
@@ -253,7 +261,10 @@ input.zichtbaar{
     z-index: 1;
 }
 
-
+input.zichtbaar:focus{
+    background-color: #fff;
+    color: #000;
+}
 
 
 
@@ -365,12 +376,16 @@ body#homepage main article:nth-of-type(2) a{
     transition: .2s;
 }
 
-body#homepage main article:nth-of-type(2) a:hover{
+body#homepage main article:nth-of-type(2) a:hover,
+body#webshop main > form button:hover,
+body#webshop main > section:nth-of-type(6) a:last-of-type:hover{
     box-shadow: 3px 3px 5px #292733;
     background-color: #000;
 }
 
-body#homepage main article:nth-of-type(2) a:active{
+body#homepage main article:nth-of-type(2) a:active
+body#webshop main > form button:hover,
+body#webshop main > section:nth-of-type(6) a:last-of-type:active{
     box-shadow: -2px -2px 5px #292733;
     background-color: #820303;
 }
@@ -563,9 +578,21 @@ body#webshop main section article {
     width: 45vw;
     max-width: 12em;
 /*    height: 100%;*/
-    padding-bottom: 1em;
+    padding: .5em .5em 1em .5em;
     margin: 1em 0;
     position: relative;
+    transition: .25s;
+}
+
+body#homepage > section:nth-of-type(2) article:hover,
+body#webshop main section article:hover{
+    box-shadow: 1px 3px 10px #dbd9d9;
+
+}
+
+body#homepage > section:nth-of-type(2) article:active,
+body#webshop main section article:active{
+    box-shadow: inset 1px 3px 10px #dbd9d9;
 }
 
 body#homepage > section:nth-of-type(2) article a img,
@@ -691,12 +718,19 @@ body#webshop main > section:nth-of-type(3) div button{
     background-color: transparent;
     color: #7b7b7b;
     transition: .2s;
+
 }
 
 body#webshop main > section:first-of-type div button:hover,
 body#webshop main > section:nth-of-type(3) div button:hover{
     background-color: #E30015;
     color: white;
+    box-shadow: -1px -1px 3px #877a7a;
+}
+
+body#webshop main > section:first-of-type div button:active,
+body#webshop main > section:nth-of-type(3) div button:active{
+    box-shadow: inset -1px -1px 3px #877a7a;
 }
 
 body#webshop main > section:first-of-type button img,
@@ -766,6 +800,20 @@ body#webshop main > section:nth-of-type(5) ul li{
 body#webshop main > section:nth-of-type(4) ul li a,
 body#webshop main > section:nth-of-type(5) ul li a{
     color: #73737a;
+    transition: .2s;
+}
+
+body#webshop main > section:nth-of-type(4) ul li a:hover,
+body#webshop main > section:nth-of-type(5) ul li a:hover{
+    background-color: #7b7b7b;
+    color: #fff;
+    padding: .2em .4em;
+    box-shadow: -1px -1px 3px #292733;
+}
+
+body#webshop main > section:nth-of-type(4) ul li a:active,
+body#webshop main > section:nth-of-type(5) ul li a:active{
+    box-shadow: inset -1px -1px 3px #292733;
 }
 
 body#webshop main > section:nth-of-type(4) ul li a.binnenverlichting-geselecteerd{
@@ -789,9 +837,14 @@ body#webshop main > form input{
     width: 21em;
     margin: .5em 0;
     background-color: #fff;
+        color: #000;
     border: solid .5px #7b7b7b;
     z-index: 1;
     padding: .5em;
+}
+
+body#webshop main > form input:focus{
+    background-color: #dbd9d9;
 }
 
 body#webshop main > form button{
@@ -859,17 +912,44 @@ footer li{
 }
 
 footer p,
-footer section ul li a,
-footer section:nth-of-type(4) ul li a,
-footer section:nth-of-type(5) ul li a{
+footer section ul li a{
     color: #666666;
     text-align: left;
     line-height: 22px;
     font-size: .8em;
     margin-left: 1em;
-    display: block;
-
+    position: relative;
+    transition: .25s;
 }
+
+footer section ul li a:hover{
+    color: #E30015;
+    font-weight: 700;
+}
+
+footer section ul li a:active{
+  color: #820303;
+}
+
+footer > section:nth-of-type(2) ul li a:after,
+footer > section:nth-of-type(3) ul li a:after,
+footer > section:nth-of-type(4) ul li a:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #e30015;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: .25s;
+}
+footer section ul li a:hover:after{
+    transform: scaleX(1);
+}
+
+
+
 
 footer section:first-of-type p:first-of-type{
     font-weight: bold;
@@ -887,6 +967,9 @@ footer section:nth-of-type(5) p img{
     margin:  0 .5em 0 0;
 }
 
+
+
+
 footer section:first-of-type section{
     margin: 0;
 }
@@ -902,19 +985,22 @@ footer section:first-of-type section li{
     width: 3em;
     position: relative;
 }
+footer section:first-of-type section li a{
+    display: block;
+}
 
 footer section:first-of-type section li a img{
     width: 100%;
 }
 footer section:first-of-type section li a img:hover{
     box-shadow: 3px 3px 7px #3d0202;
-    width: 80%;
+    width: 110%;
     position: absolute;
 }
 
 footer section:first-of-type section li a img:active{
     box-shadow: -3px -3px 7px #3d0202;
-    width: 70%;
+    width: 90%;
     position: absolute;
 }
 
@@ -924,39 +1010,6 @@ footer section:first-of-type section h6{
 }
 
 
-
-
-
-
-
-input:valid{
-
-}
-
-/* unvisited link */
-a:link {
-}
-
-/* visited link */
-a:visited {
-
-}
-
-/* mouse over link */
-ul li a:hover,
-footer section:nth-of-type(4) ul li a:hover{
-    color: #E30015;
-    font-weight: 700;
-}
-
-/* selected link */
-ul li a:active,
-footer section:nth-of-type(4) ul li a:active{
-  color: #820303;
-}
-:focus {
-  outline: 2px solid Orange;
-}
 
 
 
@@ -1072,6 +1125,41 @@ footer section:nth-of-type(4) ul li a:active{
 
 
 @media(min-width: 60em) {
+    header div:nth-of-type(2) button{
+        display: none;
+    }
+
+    header div:nth-of-type(2) nav{
+        display: block;
+        margin-top: .5em;
+    }
+
+    header div:nth-of-type(2) nav li{
+        text-align: left;
+        position: relative;
+        float: left;
+        margin-left: .5em;
+    }
+    header div:nth-of-type(2) nav li a{
+        display: block;
+        position: relative;
+        font-weight: 700;
+        line-height: 27px;
+        padding: 0 .4em .1em;
+        cursor: pointer;
+        color: #919191;
+        font-size: .8em;
+        text-transform: uppercase;
+        transition: .25s;
+    }
+
+    header div:nth-of-type(2) nav li:first-of-type a,
+    header div:nth-of-type(2) nav li:hover a{
+        background-color: #e30015;
+        color: #fff;
+        padding-bottom: .5em;
+    }
+
     body#homepage > section:nth-of-type(2){
         width: 100vw;
     }
