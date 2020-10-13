@@ -6,37 +6,50 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.youtube.com/watch?v=zPcvAwp71uA
+    voor de button animatie
+2. https://www.youtube.com/watch?v=kEf1xSwX5D8
+    voor het icoontje in de browser tab
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+In de laatste periode liep ik vast met de achergrond van een button van links naar rechts te veranderen door middel van :before en :after. Maar uiteindelijk heb ik een andere oplossing gevonden die voor het zelfde resultaat leverde.
 
-**Screenshot(s):**
+Ook heb ik nog het hamburgermenu uitgewerkt op klein scherm en op grootscherm een top navigatie. Hierbij was ik meer tijd kwijt met de problemen, die dit bezorgde voor andere elmenten op de site, op te lossen. Dit kwam blijkbaar door dat ik een nieuwe elmenten moest aanmaken en hierdoor mijn css niet meer klopte door de ":nth-of-type()".
+
+
 
 -screenshot(s) van je eindresultaat-
 
-
+![screenshot(s) van hoe ver ik ben](images/voortgang3-1.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-2.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-3.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-4.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-5.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-6.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-7.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-8.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-9.png)
+![screenshot(s) van hoe ver ik ben](images/voortgang3-10.png)
 
 ## Voortgang 3 (week 6)
 
 ### Stand van zaken
 In deze korte periode ben ik bezig geweest met het verbeteren van mijn code en mijn website toegangelijker te maken. Zo heb ik een :hover :actice states toegevoegd. Ook heb ik geprobeerd mij te verdiepen in de screenreaders, hierbij heb ik verschillende youtube filmpjes gekeken hoe je de screenreader moet gebruiken en heb ik de verschillende toetsen voor de commando's voor mezelf op geschreven. Maar toch blijft het heel moeilijk voor mij om de screenreader te begrijpen.
 
-**Screenshot(s):**
 
 ### Agenda voor meeting
 1. Hoe moet je een screenreader gebruiken
 2. Hoe kan je de website nog toegangelijker maken
-3. Hoe kan ik mijn heading in een carousel een vaste plek geven.
+3. Hoe kan ik mijn heading in een carrousel een vaste plek geven.
 4. Hoe gebruik je een :before en :after voor een knop waarbij de achtergrond veranderd van links naar rechts.
 
 ### Verslag van meeting
+Om de heading in de carrousel een vaste plek te geven bestaat een manier maar die is fout gevoelig voor veel browsers, dus je kan beter gebruik maken van een div.
 
+Met het installeren van de 'web developer' toolbar in chrome, kan je bvb Js uitzetten of de structuur van je headings bekijken.
 
 
 ## Voortgang 2 (week 5)
